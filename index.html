@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,
+        initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Webpage">
+    <meta name="author" content="Zack Hagan">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="assets/images/favicon-32x32.png">
+    <title>Trivia Game</title>
+      <!-- Normalize Style Sheet -->
+      <link href="assets/css/normalize.css" rel="stylesheet">
+
+      <!-- Custom Style Sheet -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Electrolize|Lato"
+        rel="stylesheet">
+  </head>
+
+<body>
+    <div class="container">
+
+      <header>
+        <h2>
+          Internet and Computing Trivia
+        </h2>
+      </header>
+
+      <div class="questionDiv">
+        <a id="link" target="_blank">
+          <img src="assets/images/main.jpg" alt="image">
+        </a>
+        <div class="questionContent">
+          <h3 id="questionTitle">Instructions:</h3>
+          <p id="question">
+            Try to answer each question before time runs out.
+            <br><br>
+            Click the image behind a question for more info.
+          </p>
+        </div>
+      </div>
+
+      <div class="answerDiv">
+        <h4 id="answerTitle"></h4>
+        <hr>
+        <ul id="answer">
+        </ul>
+        <button id="play">
+          Start Game
+        </button>
+      </div>
+
+      <div class="timerDiv">
+        <p>
+          Timer:
+        </p>
+        <h3 id="time">
+          00:00
+        </h3>
+
+      </div>
+
+      <div class="scoreDiv">
+        <p>
+          Score:
+        </p>
+        <h3 id="score">
+          0 / 0
+        </h3>
+
+
+      </div>
+
+      <footer>
+        <span>&copy; Copyright 2017 Zack Hagan</span>
+      </footer>
+
+    </div>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script
+      src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+      integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/javascript/trivia-game.js" type="text/javascript">
+    </script>
+
+  </body>
+</html>
