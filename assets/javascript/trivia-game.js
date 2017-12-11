@@ -39,7 +39,7 @@ game = {
         {
             question: 'What mountain view inspired Katherine Lee Bates\'s'
                 + ' America The Beautiful?',
-            options: ['Mt Evans', 'Pikes Peak', 'Mt Shasta', 'Mt Ranier', 'Smoky Mountain',
+            options: ['Mt Evans', 'Pikes Peak', 'Mt Shasta', 'Mt Rainier', 'Smoky Mountain',
                     'Mt Rushmore'],
             answer: 1,
             image: 'q3.png',
