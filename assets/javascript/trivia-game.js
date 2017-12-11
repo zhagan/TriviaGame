@@ -94,7 +94,6 @@ game = {
             $('#link').html('<img src="assets/images/'
                 + game.questions[game.round - 1].image + '">'
             );
-            $('#link').attr('href', game.questions[game.round - 1].link);
             $('#answerTitle').html('Answer Choices:');
 
             //create buttons
