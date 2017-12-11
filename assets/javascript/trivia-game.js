@@ -55,7 +55,7 @@ game = {
         },
         {
             question: 'In which city is the United States Air'
-                + ' Force Academy located in?',
+                + ' Force Academy located?',
             options: ['Colorado Springs',  'Fort Collins',
                   'Boulder', 'Parker', 'Denver'],
             answer: 0,
@@ -66,7 +66,6 @@ game = {
             options: ['Durango', 'Mesa Verde', 'Grand Mesa', 'Taos'],
             answer: 2,
             image: 'q6.jpg',
-
         },
 
     ],
