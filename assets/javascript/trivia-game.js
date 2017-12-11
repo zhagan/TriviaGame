@@ -20,6 +20,8 @@ game = {
             options: ['Mt Evans', 'Pikes Peak', 'Mt Shasta', 'Mt Ranier', 'Smoky Mountain',
                 'Mt Rushmore'],
             answer: 0,
+            image: 'q0.jpg',
+
           },
         {
             question: 'Which food does Denver claim was invented whithin the'
