@@ -6,13 +6,13 @@ $(document).ready(function() {
     $('#play').on('click', game.restart);
 });
 
-//object containing this game
+//object main
 game = {
     // time allowed to answer each question
-    maxTime: 45,
+    maxTime: 30,
 
-    //array of questions and answers with associated link and image
-    //any quantity of questions and answer choices may be entered
+    //array of questions and answers with image
+
     questions: [
         {
             question: 'Which mountain has the highest paved road in'
@@ -20,10 +20,7 @@ game = {
             options: ['Mt Evans', 'Pikes Peak', 'Mt Shasta', 'Mt Ranier', 'Smoky Mountain',
                 'Mt Rushmore'],
             answer: 0,
-            image: 'q0.jpg',
-            // link: 'https://www.technologyreview.com/s/609242/humans-are-still'
-            //     + '-better-than-ai-at-starcraftfor-now/',
-        },
+          },
         {
             question: 'Which food does Denver claim was invented whithin the'
                 + ' municpality in 1935',
@@ -31,8 +28,6 @@ game = {
                 'CheeseBurger', 'Green Chile', 'Corndogs'],
             answer: 2,
             image: 'q1.jpg',
-            // link: 'https://www.bloomberg.com/news/articles/2017-04-25/google'
-            // + '-rewrites-its-powerful-search-rankings-to-bury-fake-news',
         },
         {
             question: 'Who owns 1/3 of all the land in Colorado',
@@ -40,8 +35,6 @@ game = {
                 'Coors'],
             answer: 2,
             image: 'q2.jpg',
-            // link: 'https://medium.com/mozilla-internet-citizen/how-does-https'
-            //     + '-protect-you-and-how-doesnt-it-6c785884a130',
         },
         {
             question: 'What mountain view inspired Katherine Lee Bates\'s'
@@ -49,75 +42,32 @@ game = {
             options: ['Mt Evans', 'Pikes Peak', 'Mt Shasta', 'Mt Ranier', 'Smoky Mountain',
                     'Mt Rushmore'],
             answer: 1,
-            image: 'q3.jpg',
-            // link: 'http://blog.kameleoon.com/en/types-web-cookies/',
+            image: 'q3.png',
         },
         {
             question: 'Which city has the largest parks system in'
                 + ' the nation?',
             options: ['Colorado Springs',  'Fort Collins',
-                'Boulder', 'Parker',
-                'Denver'],
+                'Boulder', 'Parker', 'Denver'],
             answer: 4,
             image: 'q4.jpg',
-            // link: 'https://techcrunch.com/2016/02/18/google-opens-its-cloud-vision-api-to-all-developers/',
         },
         {
-            question: 'Which of these quantites is the largest according to'
-                + ' current estimates?',
-            options: ['diameter of our galaxy in meters',
-                'amount of data on the internet in bytes',
-                'litres of water in Earth\'s oceans'],
-            answer: 1,
+            question: 'In which city is the United States Air'
+                + ' Force Academy located in?',
+            options: ['Colorado Springs',  'Fort Collins',
+                  'Boulder', 'Parker', 'Denver'],
+            answer: 0,
             image: 'q5.jpg',
-            // link: 'https://www.lifewire.com/how-big-is-the-web-4065573',
         },
         {
             question: 'Where is the worlds largest flat top mountain?',
             options: ['Durango', 'Mesa Verde', 'Grand Mesa', 'Taos'],
             answer: 2,
             image: 'q6.jpg',
-            // link: 'https://www.racksolutions.com/news/data-center-news/top-10'
-            //     + '-largest-data-centers-world/',
+
         },
-        // {
-        //     question: 'Which entity houses the largest volume of digitized data'
-        //         + ' in one unique database?',
-        //     options: ['AT&T', 'US Governement', 'Google', 'Facebook'],
-        //     answer: 0,
-        //     image: 'q7.jpg',
-        //     link: 'https://www.waterfordtechnologies.com/big-data-interesting'
-        //         + '-facts/',
-        // },
-        // {
-        //     question: 'Apache maintains an open source processor for very large'
-        //         + ' data sets called Hadoop.<br><br>From what did Hadoop get'
-        //         + ' its name and elephant logo?',
-        //     options: ['a circus animal', 'a tribal story', 'a toy', 'a book'],
-        //     answer: 2,
-        //     image: 'q8.jpg',
-        //     link: 'https://www.sas.com/en_us/insights/big-data/hadoop.html',
-        // },
-        // {
-        //     question: 'What percentage of S&P 500 companies\' market value'
-        //         + ' comes from intangible assets, including data and software?',
-        //     options: ['22%', '57%', '84%', '91%'],
-        //     answer: 2,
-        //     image: 'q9.jpg',
-        //     link: 'http://files.technologyreview.com/whitepapers/MIT_Oracle'
-        //         + '+Report-The_Rise_of_Data_Capital.pdf?_ga=2.18019193.'
-        //         + '1751378999.1511739668-1844887473.1511623668',
-        // },
-        // {
-        //     question: 'The Turing test was devised to test whether humans can'
-        //         + ' distinguish between an AI program and another human. Turing'
-        //         + ' bet that the test would be passed by the year 2000.<br><br>'
-        //         + 'In what year did an AI pass the Turing test?',
-        //     options: ['1998', '2000', '2014', '2017', 'not yet passed'],
-        //     answer: 2,
-        //     image: 'q10.jpg',
-        //     link: 'http://time.com/2847900/eugene-goostman-turing-test/',
-        // },
+
     ],
 
     restart: function() {
@@ -233,7 +183,7 @@ game = {
         }, 1000);
 
         //wait then start new round
-        setTimeout(game.newRound, 7000);
+        setTimeout(game.newRound, 2000);
     },
 
     end: function() {

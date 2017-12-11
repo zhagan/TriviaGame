@@ -1,15 +1,15 @@
 /*--- Theme Variables ---*/
 
 :root {
-  --background-color: #192231;
-  --header-color: #192231;
+  --background-color: #0A6535;
+  --header-color: #0A6535;
   --header-font-color: #aaa;
-  --footer-color: #192231;
+  --footer-color: #0A6535;
   --footer-font-color: #aaa;
-  --panel-color: #192231;
+  --panel-color: #0A6535;
   --border-color: #494e6b;
   --main-font-color: #aaa;
-  --sidebar-color: #494e6b;
+  --sidebar-color: #0A6535;
   --sidebar-font-color: #aaa;
   --button-color: #caebf2;
 
