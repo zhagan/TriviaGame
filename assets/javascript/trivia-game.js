@@ -178,11 +178,11 @@ game = {
 
         //animate correct answer background color
         $('#btn-' + game.questions[game.round - 1].answer).animate({
-            backgroundColor: "#80ff80"
+            backgroundColor: "#0A6535"
         }, 1000);
 
         //wait then start new round
-        setTimeout(game.newRound, 2000);
+        setTimeout(game.newRound, 7000);
     },
 
     end: function() {
@@ -257,8 +257,6 @@ game = {
         },
 
         stop: function() {
-            // Use clearInterval to stop the count here and set the clock
-            // to not be running.
             clearInterval(intervalId);
             game.clockRunning = false;
         },
